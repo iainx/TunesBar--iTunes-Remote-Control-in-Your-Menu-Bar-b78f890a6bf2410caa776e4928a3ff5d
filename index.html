@@ -4,7 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TunesBar+ | iTunes Remote Control in Your Menu Bar</title>
 
-	
+<script src="prettyPhoto/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+        <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>	
 	<script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;appId=385205984962960&amp;version=v2.0"></script>
 	
 
@@ -117,6 +119,10 @@ img.appstore {
 	width: 57.6%;
 }
 
+a img {
+	border: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Raleway", sans-serif;
 	font-weight: normal;
@@ -140,8 +146,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #icon-row img {
 	width: 100%;
-	border-radius: 19px;
-	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
 }
 #description {
 	margin: auto;
@@ -208,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 	</div>
 	<div id="right">
 		<div class="macbook">
-			<img src="http://a2.mzstatic.com/us/r30/Purple3/v4/1e/77/0b/1e770b80-c88d-c763-e96f-c3111faa1482/screen800x500.jpeg">
+			<a href="http://a2.mzstatic.com/us/r30/Purple3/v4/1e/77/0b/1e770b80-c88d-c763-e96f-c3111faa1482/screen800x500.jpeg" rel="prettyPhoto"><img src="http://a2.mzstatic.com/us/r30/Purple3/v4/1e/77/0b/1e770b80-c88d-c763-e96f-c3111faa1482/screen800x500.jpeg"></a>
 		</div>
 	</div>
 </div>
@@ -221,13 +225,13 @@ h1, h2, h3, h4, h5, h6 {
 
 <div id="screenshots">
 	
-		<img src="http://a4.mzstatic.com/us/r30/Purple5/v4/96/80/6b/96806bb0-d11c-7bfc-8324-93bcaffef0a3/screen800x500.jpeg">
+		<a href="http://a4.mzstatic.com/us/r30/Purple5/v4/96/80/6b/96806bb0-d11c-7bfc-8324-93bcaffef0a3/screen800x500.jpeg" rel="prettyPhoto"><img src="http://a4.mzstatic.com/us/r30/Purple5/v4/96/80/6b/96806bb0-d11c-7bfc-8324-93bcaffef0a3/screen800x500.jpeg"></a>
 	
-		<img src="http://a1.mzstatic.com/us/r30/Purple1/v4/f1/41/81/f14181a9-0ff5-cf42-20a4-0d71961e7220/screen800x500.jpeg">
+		<a href="http://a1.mzstatic.com/us/r30/Purple1/v4/f1/41/81/f14181a9-0ff5-cf42-20a4-0d71961e7220/screen800x500.jpeg" rel="prettyPhoto"><img src="http://a1.mzstatic.com/us/r30/Purple1/v4/f1/41/81/f14181a9-0ff5-cf42-20a4-0d71961e7220/screen800x500.jpeg"></a>
 	
-		<img src="http://a5.mzstatic.com/us/r30/Purple5/v4/3b/e5/b4/3be5b447-3a9e-44f1-c0ee-ff96d897e05c/screen800x500.jpeg">
+		<a href="http://a5.mzstatic.com/us/r30/Purple5/v4/3b/e5/b4/3be5b447-3a9e-44f1-c0ee-ff96d897e05c/screen800x500.jpeg" rel="prettyPhoto"><img src="http://a5.mzstatic.com/us/r30/Purple5/v4/3b/e5/b4/3be5b447-3a9e-44f1-c0ee-ff96d897e05c/screen800x500.jpeg"></a>
 	
-		<img src="http://a2.mzstatic.com/us/r30/Purple3/v4/b6/33/55/b6335569-1d05-6be9-08b2-bd51538b7f98/screen800x500.jpeg">
+		<a href="http://a2.mzstatic.com/us/r30/Purple3/v4/b6/33/55/b6335569-1d05-6be9-08b2-bd51538b7f98/screen800x500.jpeg" rel="prettyPhoto"><img src="http://a2.mzstatic.com/us/r30/Purple3/v4/b6/33/55/b6335569-1d05-6be9-08b2-bd51538b7f98/screen800x500.jpeg"></a>
 	
 </div>
 
@@ -264,5 +268,9 @@ Landing page created automatically with <a href="http://app-stop.appspot.com">Ap
 
 </div>
 
-
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
 </body></html>
